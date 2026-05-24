@@ -1,4 +1,8 @@
-data/*
+# Data files tracked by DVC
+/data/*.txt
+/data/*.csv
+!/data/*.dvc
+!/data/.gitignore
 .venv
 __pycache__/
 *.pyc

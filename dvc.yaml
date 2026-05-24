@@ -1,0 +1,9 @@
+stages:
+  clean:
+    cmd: python src/data_cleaning.py
+    deps:
+      - data/MachineLearningRating_v3.txt
+      - src/data_cleaning.py
+    outs:
+      - data/cleaned_insurance_data.csv:
+          cache: false
