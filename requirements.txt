@@ -7,3 +7,6 @@ pytest
 flake8 
 jupyter
 dvc
+scikit-learn
+xgboost
+shap
