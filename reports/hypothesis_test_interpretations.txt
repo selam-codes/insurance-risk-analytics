@@ -1,0 +1,35 @@
+A/B HYPOTHESIS TESTING — RESULTS & INTERPRETATIONS
+============================================================
+
+Hypothesis 1: H1: Risk differences across provinces
+  KPI:       Claim Frequency
+  Test:      Chi-squared
+  Statistic: 56.0874
+  p-value:   6.93e-14
+  Decision:  Reject H₀
+  Interpretation: We reject H₀ for provinces (p = 6.93e-14). Gauteng exhibits a 55% higher claim frequency than Western Cape (0.0034 vs 0.0022), suggesting a regional risk adjustment to premiums may be warranted.
+
+Hypothesis 2: H2: Risk differences between zip codes
+  KPI:       Claim Frequency
+  Test:      Chi-squared
+  Statistic: 19.7892
+  p-value:   8.65e-06
+  Decision:  Reject H₀
+  Interpretation: We reject H₀ for zip codes (p = 8.65e-06). Zip code 8000 shows a 176% higher claim frequency than zip code 7405 (0.0043 vs 0.0016). Zip-code-level risk factors should be incorporated into the pricing model.
+
+Hypothesis 3: H3: Margin differences between zip codes
+  KPI:       Margin
+  Test:      z-test
+  Statistic: -0.8918
+  p-value:   3.73e-01
+  Decision:  Fail to reject H₀
+  Interpretation: We fail to reject H₀ (p = 0.3725). No statistically significant margin difference between zip codes 8000 and 7405. Although claim frequencies differ, current premium levels appear to partially compensate, or the high variance in individual margins masks the signal.
+
+Hypothesis 4: H4: Risk differences between Women and Men
+  KPI:       Claim Frequency
+  Test:      Chi-squared
+  Statistic: 0.0037
+  p-value:   9.51e-01
+  Decision:  Fail to reject H₀
+  Interpretation: We fail to reject H₀ (p = 0.9515). No statistically significant claim-frequency difference between Women (0.0021) and Men (0.0022). Gender does not appear to be a significant risk differentiator in this dataset. Note: ~95% of records lack gender data, so this conclusion is limited to the available subset.
+
