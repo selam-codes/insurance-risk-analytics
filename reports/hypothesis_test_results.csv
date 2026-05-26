@@ -1,0 +1,5 @@
+Hypothesis,KPI,Group A,Group B,Test,Statistic,p-value,α,Decision
+H1: Risk differences across provinces,Claim Frequency,Gauteng,Western Cape,Chi-squared,56.0874,6.93e-14,0.05,Reject H₀
+H2: Risk differences between zip codes,Claim Frequency,8000,7405,Chi-squared,19.7892,8.65e-06,0.05,Reject H₀
+H3: Margin differences between zip codes,Margin,8000,7405,z-test,-0.8918,0.3725,0.05,Fail to reject H₀
+H4: Risk differences between Women and Men,Claim Frequency,Female,Male,Chi-squared,0.0037,0.9515,0.05,Fail to reject H₀
